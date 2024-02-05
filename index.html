@@ -1,0 +1,643 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap");
+      body {
+        width: 100% !important;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        margin: 0;
+        padding: 0;
+        line-height: 100%;
+        font-family: Arial, Helvetica, sans-serif, "Raleway";
+      }
+
+      [style*="Raleway"] {
+        font-family: "Raleway", arial, sans-serif !important;
+      }
+
+      img {
+        outline: none;
+        text-decoration: none;
+        border: none;
+        -ms-interpolation-mode: bicubic;
+        max-width: 100% !important;
+        margin: 0;
+        padding: 0;
+        display: block;
+      }
+
+      table td {
+        border-collapse: collapse;
+      }
+
+      table {
+        border-collapse: collapse;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+      }
+
+      .menu a {
+        color: #6c6c6c;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.28px;
+        text-decoration: none;
+      }
+      .menu td {
+        padding: 0 25px 0 0 !important;
+      }
+      .menu td:last-child {
+        padding: 0 0 0 0 !important;
+      }
+
+      .quote_text td {
+        color: #8c8c8c;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.28px;
+      }
+
+      .quote_text p {
+        padding: 5px;
+      }
+      .quote_author p,
+      h3 {
+        margin: 0;
+      }
+      .quote_author img {
+        padding: 10px 0 0 0;
+      }
+      .quote_author h3 {
+        color: #686868;
+        font-weight: 600;
+        font-size: 16px;
+        letter-spacing: 0.56px;
+        padding: 0 0 5px 0;
+      }
+      .quote_author p {
+        color: #8c8c8c;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.52px;
+      }
+      .footer-menu a {
+        color: #a5b1c4;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.28px;
+        text-decoration: none;
+      }
+      .footer-menu td {
+        padding: 0 30px 0 0;
+      }
+      .footer-menu td:last-child {
+        padding: 0 0 0 0;
+      }
+
+      .adaptive-logo {
+        display: none;
+        width: 46px;
+        padding: 20px 0 20px 0;
+      }
+      .menu-td {
+        padding: 0 0 42px 0;
+      }
+
+      .future {
+        padding: 0 30px 0 0;
+      }
+      .mobile-author {
+        display: none;
+      }
+      .feature {
+        padding: 0 25px 0 0;
+      }
+
+      .menu td {
+        padding-left: 30px;
+      }
+
+      .header-td {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+
+      .features-td {
+        padding: 50px 0 50px 0;
+      }
+
+      .features-td p {
+        color: #8c8c8c;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0.28px;
+      }
+
+      .blockqoute-td {
+        padding-top: 150px;
+        padding-bottom: 50px;
+      }
+
+      .block-td p {
+        color: #8c8c8c;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.28px;
+        margin: 0;
+      }
+
+      .footer-td {
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+
+      @media (max-width: 870px) {
+        .block-td {
+          padding: 0 20px 0 0;
+        }
+        .block-td:last-child {
+          padding: 0 0 0 0;
+        }
+        .footer-menu td {
+          padding: 0 20px 0 0;
+        }
+
+        .table-850 {
+          width: 600px !important;
+        }
+
+        .table-600 {
+          width: 550px !important;
+        }
+        .menu-600 {
+          width: 550px !important;
+        }
+
+        .features-td td {
+          display: block !important;
+          padding-bottom: 50px !important;
+        }
+        .future {
+          padding: 0 0 0 0;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .block-td {
+          padding: 0 0 0 0;
+        }
+        .quote_author {
+          display: none;
+        }
+        .mobile-author {
+          display: block;
+        }
+        .bella-logo {
+          display: none;
+        }
+        .adaptive-logo {
+          display: block;
+        }
+        .menu-td {
+          padding: 0 0 22px 0;
+        }
+
+        .table-850 {
+          width: 400px !important;
+        }
+
+        .table-600 {
+          width: 320px !important;
+        }
+        .menu-600 {
+          width: 270px !important;
+        }
+
+        .block-td {
+          display: block !important;
+        }
+
+        .blockqoute-td tr {
+          display: block !important;
+        }
+
+        .menu {
+          display: block !important;
+          margin: 0 auto !important;
+        }
+      }
+
+      @media (max-width: 420px) {
+        .footer-menu td {
+          padding: 0 10px 0 0;
+        }
+        .footer-menu a {
+          font-size: 14px;
+        }
+        .table-850 {
+          width: 300px !important;
+        }
+
+        .table-600 {
+          width: 260px !important;
+        }
+        .menu-600 {
+          width: 260px !important;
+        }
+
+        .blockqoute-td {
+          padding-top: 50px !important;
+          padding-bottom: 50px !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body
+    style="
+      margin: 0;
+      padding: 0;
+      font-family: 'Raleway', sans-serif, Arial, Helvetica;
+    "
+  >
+    <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ededed">
+      <tr>
+        <td>
+          <table
+            cellpadding="0"
+            cellspacing="0"
+            width="850"
+            align="center"
+            bgcolor="#ffffff"
+            class="table-850"
+          >
+            <tr>
+              <td height="30" width="850" align="center">
+                <img
+                  src="https://i.ibb.co/rGWwqmB/bella.png"
+                  alt="Bella logo"
+                  class="adaptive-logo"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="menu-td">
+                <table
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="600"
+                  align="center"
+                  class="menu-600"
+                  style="max-width: 600px"
+                >
+                  <tr>
+                    <td align="left" class="bella-logo">
+                      <img
+                        src="https://i.ibb.co/rGWwqmB/bella.png"
+                        alt="Bella logo"
+                      />
+                    </td>
+                    <td align="right">
+                      <table cellpadding="0" cellspacing="0" class="menu">
+                        <td><a href="#">Team</a></td>
+                        <td><a href="#">Features</a></td>
+                        <td><a href="#">Pricing</a></td>
+                        <td><a href="#">Contact</a></td>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <table>
+                  <tr>
+                    <td>
+                      <a href="#"
+                        ><img
+                          src="https://i.ibb.co/JFYDsJv/hero-img.png"
+                          alt="Banner"
+                          width="850"
+                          style="max-width: 850px"
+                      /></a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="features-td">
+                <table
+                  class="table-600"
+                  cellpadding="0"
+                  cellspacing="0"
+                  align="center"
+                >
+                  <tr>
+                    <td align="center" class="future">
+                      <img
+                        src="https://i.ibb.co/Q7VjdHY/return.png"
+                        alt="Return section"
+                        style="padding: 0 0 25px 0"
+                      />
+                      <p>
+                        phoncus ut, imperdiet vel <br />
+                        venenatis vitae justo ullam <br />
+                        dictum felis eu pede mollis <br />
+                        pretium massa.
+                      </p>
+                      <a href="#"
+                        ><img
+                          src="https://i.ibb.co/xYQv7fd/read-more.png"
+                          alt="Read more"
+                      /></a>
+                    </td>
+                    <td align="center" class="future">
+                      <img
+                        src="https://i.ibb.co/PtL7dpX/stopwatch.png"
+                        alt="Stopwatch section"
+                        style="padding: 0 0 25px 0"
+                      />
+                      <p>
+                        phoncus ut, imperdiet vel <br />
+                        venenatis vitae justo ullam <br />
+                        dictum felis eu pede mollis <br />
+                        pretium massa.
+                      </p>
+                      <a href="#"
+                        ><img
+                          src="https://i.ibb.co/xYQv7fd/read-more.png"
+                          alt="Read more"
+                      /></a>
+                    </td>
+                    <td align="center" class="future">
+                      <img
+                        src="https://i.ibb.co/R3bgzTT/reminders.png"
+                        alt="Reminders section"
+                        style="padding: 0 0 25px 0"
+                      />
+                      <p>
+                        phoncus ut, imperdiet vel <br />
+                        venenatis vitae justo ullam <br />
+                        dictum felis eu pede mollis <br />
+                        pretium massa.
+                      </p>
+                      <a href="#"
+                        ><img
+                          src="https://i.ibb.co/xYQv7fd/read-more.png"
+                          alt="Read more"
+                      /></a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                style="padding: 80px 0 80px 0"
+                bgcolor="#FCFCFC"
+                class="blockqoute-td"
+              >
+                <table
+                  cellpadding="0"
+                  cellspacing="0"
+                  align="center"
+                  class="table-600"
+                  width="600"
+                >
+                  <tr class="quote_text">
+                    <td align="center" class="block-td">
+                      <table
+                        cellpadding="0"
+                        cellspacing="0"
+                        align="center"
+                        width="280"
+                      >
+                        <tr align="center">
+                          <td
+                            align="center"
+                            style="
+                              position: relative;
+                              border: 1px solid #e6e6e6;
+                            "
+                          >
+                            <p>
+                              Donec quam felis ultricies nec pel <br />
+                              lentesque pretium quis sem massa <br />
+                              quis enim. Donec pede justo fring <br />
+                              illa vel aliquet nec vulputate eget <br />
+                              magnis montes ligula eget.
+                            </p>
+                          </td>
+                        </tr>
+
+                        <tr align="center">
+                          <td
+                            align="center"
+                            style="padding: 0 0 20px 0"
+                            class="mobile-author"
+                          >
+                            <div style="padding: 0 0 10px 0">
+                              <img
+                                style="transform: rotate(180deg)"
+                                src="https://i.ibb.co/6tzLkp8/triangle.png"
+                                alt="Triangle"
+                                width="15"
+                                height="15"
+                              />
+                            </div>
+
+                            <img
+                              src="https://i.ibb.co/0VP6fZ9/author-img.png"
+                              alt="Author review"
+                              style="padding: 0 0 15px 0"
+                            />
+                            <h3>Alexander Doe</h3>
+                            <p>Senior UX Developer</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td align="center" class="block-td">
+                      <table
+                        cellpadding="0"
+                        cellspacing="0"
+                        align="center"
+                        width="280"
+                      >
+                        <tr align="center">
+                          <td
+                            align="center"
+                            style="
+                              position: relative;
+                              border: 1px solid #e6e6e6;
+                            "
+                          >
+                            <p>
+                              Donec quam felis ultricies nec pel <br />
+                              lentesque pretium quis sem massa <br />
+                              quis enim. Donec pede justo fring <br />
+                              illa vel aliquet nec vulputate eget <br />
+                              magnis montes ligula eget.
+                            </p>
+                          </td>
+                        </tr>
+
+                        <tr align="center">
+                          <td
+                            align="center"
+                            style="padding: 0 0 20px 0"
+                            class="mobile-author"
+                          >
+                            <div style="padding: 0 0 10px 0">
+                              <img
+                                style="transform: rotate(180deg)"
+                                src="https://i.ibb.co/6tzLkp8/triangle.png"
+                                alt="Triangle"
+                                width="15"
+                                height="15"
+                              />
+                            </div>
+
+                            <img
+                              src="https://i.ibb.co/4P2dS07/author-img-2.png"
+                              alt="Author review"
+                              style="padding: 0 0 15px 0"
+                            />
+                            <h3>Laurie Doe</h3>
+                            <p>Marketing Expert</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td
+                      align="center"
+                      style="padding: 0 20px 0 0"
+                      class="quote_author"
+                    >
+                      <div>
+                        <img
+                          style="transform: rotate(180deg)"
+                          src="https://i.ibb.co/6tzLkp8/triangle.png"
+                          alt="Triangle"
+                          width="15"
+                          height="15"
+                        />
+                      </div>
+
+                      <img
+                        src="https://i.ibb.co/0VP6fZ9/author-img.png"
+                        alt="Author review"
+                        style="padding: 0 0 15px 0"
+                      />
+                      <h3>Alexander Doe</h3>
+                      <p>Senior UX Developer</p>
+                    </td>
+                    <td
+                      align="center"
+                      style="padding: 0 0 0 0"
+                      class="quote_author"
+                    >
+                      <div>
+                        <img
+                          style="transform: rotate(180deg)"
+                          src="https://i.ibb.co/6tzLkp8/triangle.png"
+                          alt="Triangle"
+                          width="15"
+                          height="15"
+                        />
+                      </div>
+
+                      <img
+                        src="https://i.ibb.co/4P2dS07/author-img-2.png"
+                        alt="Author review"
+                        style="padding: 0 0 15px 0"
+                      />
+                      <h3>Laurie Doe</h3>
+                      <p>Marketing Expert</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                bgcolor="#38404b"
+                style="padding: 80px 0 80px 0"
+                class="footer-td"
+              >
+                <table
+                  class="table-600"
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="600"
+                  align="center"
+                >
+                  <tr>
+                    <td bgcolor="#38404b">
+                      <table cellpadding="0" cellspacing="0" align="center">
+                        <tr>
+                          <td align="center" style="padding: 0 0 60px 0">
+                            <a href="#">
+                              <img
+                                src="https://i.ibb.co/Htd3fZp/bella-footer.png"
+                                alt="Bella footer-logo"
+                              />
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td style="padding: 0 0 35px 0">
+                      <table
+                        cellpadding="0"
+                        cellspacing="0"
+                        align="center"
+                        class="footer-menu"
+                      >
+                        <tr>
+                          <td><a href="#">About Us</a></td>
+                          <td><a href="#">Team</a></td>
+                          <td><a href="#">News</a></td>
+                          <td><a href="#">Contact Us</a></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td align="center" style="color: #a5b1c4; font-weight: 600">
+                      © 2014 <span style="color: #f3f3f4">pixelhint.com</span>.
+                      All Rights Reserved
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
